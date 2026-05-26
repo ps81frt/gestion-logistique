@@ -1,4 +1,3 @@
-```bash
 #!/bin/bash
 # ==============================================================
 # Nom    : gestion-logistique.sh
@@ -218,4 +217,3 @@ case "$ACTION" in
         exit 1
         ;;
 esac
-```
