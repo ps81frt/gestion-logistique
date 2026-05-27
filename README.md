@@ -1,3 +1,6 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+**Dépôt :** https://github.com/ps81frt/gestion-logistique
 # gestion-logistique.sh
 
 Script bash de gestion des droits d'installation logistique via polkit sur Linux Mint et Ubuntu.  
