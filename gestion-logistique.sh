@@ -6,6 +6,8 @@
 # Date       : 2026-05-28
 # Rôle       : Accorder / révoquer les droits d'installation logistique via polkit
 # Cible      : Linux Mint / Ubuntu (systemd + polkit)
+# Dépôt      : https://github.com/ps81frt/gestion-logistique
+# Licence    : MIT
 # -----------------------------------------------------------------------------
 # Usage :
 #   sudo bash gestion-logistique.sh install     <utilisateur>   # Accorder les droits
