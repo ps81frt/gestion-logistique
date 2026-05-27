@@ -186,14 +186,11 @@ cmd_rollback() {
         exit 1
     fi
 
-    # Restore rule
     cp "$latest" "$POLKIT_RULE_FILE"
     chmod 644 "$POLKIT_RULE_FILE"
 
-    # Ensure group exists (rollback should restore rights-capable environment)
     groupadd -f "$POLKIT_GROUP"
 
-    # Ensure target user is back in the group
     usermod -aG "$POLKIT_GROUP" "$TARGET_USER"
 
     reload_polkit
