@@ -237,6 +237,11 @@ build_allowed_lines() {
     lines+=('"org.freedesktop.Flatpak.system-install"')
     lines+=('"org.freedesktop.Flatpak.system-uninstall"')
 
+        # SNAP (Ubuntu)
+    lines+=('"io.snapcraft.snapd.install"')
+    lines+=('"io.snapcraft.snapd.remove"')
+    lines+=('"io.snapcraft.snapd.refresh"')
+
     local out=""
     local last_idx=$((${#lines[@]} - 1))
     for i in "${!lines[@]}"; do
