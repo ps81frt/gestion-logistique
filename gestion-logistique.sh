@@ -63,6 +63,9 @@
 #
 #   • Vérifier l'intégrité d'un backup :
 #       sha256sum -c /etc/polkit-1/rules.d/99-logistique-install.rules.YYYYMMDD_HHMMSS.bak.sha256
+#   
+#   • Test depuis la session utilisateur
+#        pkcheck --action-id org.freedesktop.packagekit.package-install --process $$
 # -----------------------------------------------------------------------------
 # Sorties :
 #   0  : Succès
