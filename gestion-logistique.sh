@@ -239,7 +239,7 @@ build_allowed_lines() {
 
         # SNAP (Ubuntu)
     lines+=('"io.snapcraft.snapd.install"')
-    lines+=('"io.snapcraft.snapd.remove"')
+    #lines+=('"io.snapcraft.snapd.remove"')
     lines+=('"io.snapcraft.snapd.refresh"')
 
     local out=""
