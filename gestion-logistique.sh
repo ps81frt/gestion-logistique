@@ -256,8 +256,7 @@ write_rule() {
     cat >"$tmp_file" <<EOF
 polkit.addRule(function(action, subject) {
     if (!subject.local || !subject.active) { return null; }
-    if (!subject.isInGroup("${POLKIT_GROUP}")) { return null; }
-
+    if (!subject.groups || subject.groups.indexOf("${POLKIT_GROUP}") === -1) { return null; }
     var allowed = [
 ${allowed_lines}    ];
 
